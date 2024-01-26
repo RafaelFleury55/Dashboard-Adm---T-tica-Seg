@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <title>Painel Administrativo - Tatica Seg</title>
+</head>
+<body>
+
+  <div class="container">
+    <!-- SIDEBAR SECTION-->
+    <aside>
+      <div class="toggle">
+        <div class="logo">
+          <img src="images/logo.png">
+          <h2>TÁTICA<span class="danger"> SEG</span></h2>
+        </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">
+              close
+              </span>
+          </div>
+      </div>
+      <div class="sidebar">
+        <a href="#">
+          <span class="material-icons-sharp">
+            dashboard
+            </span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+            person_outline
+            </span>
+          <h3>Users</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+            receipt_long
+            </span>
+          <h3>History</h3>
+        </a>
+        <a href="#" class="active">
+          <span class="material-icons-sharp">
+            insights
+            </span>
+          <h3>Analytics</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+            mail_outline
+            </span>
+          <h3>Tickets</h3>
+          <span class="message-count">27</span>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+            inventory
+            </span>
+          <h3>Sale list</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+            report_gmailerrorred
+            </span>
+          <h3>Reports</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+            settings
+            </span>
+          <h3>Settings</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+            add
+            </span>
+          <h3>New Login</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-sharp">
+            logout
+            </span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+    </aside>
+    <!--Final da Seção Sidebar-->
+
+    <!-- Main Content-->
+    <main>
+      <h1>Analytics</h1>
+      <!-- Analyses-->
+      <div class="analyse">
+        <div class="sales">
+          <div class="status">
+            <div class="info">
+              <h3>Total de Vendas</h3>
+              <h1>R$30,025</h1>
+            </div>
+            <div class="progresss">
+              <svg>
+                <circle cx="38" cy="38" r="36"></circle>
+              </svg>
+              <div class="percentage">
+                <p>+81%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="visits">
+          <div class="status">
+            <div class="info">
+              <h3>Total de Visitas</h3>
+              <h1>29,825</h1>
+            </div>
+            <div class="progresss">
+              <svg>
+                <circle cx="38" cy="38" r="36"></circle>
+              </svg>
+              <div class="percentage">
+                <p>+48%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="searches">
+          <div class="status">
+            <div class="info">
+              <h3>Pesquisas</h3>
+              <h1>19,825</h1>
+            </div>
+            <div class="progresss">
+              <svg>
+                <circle cx="38" cy="38" r="36"></circle>
+              </svg>
+              <div class="percentage">
+                <p>+21%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FINAL SEÇÃO ANALYSES-->
+
+      <!--Seção de Novos Usuarios-->
+      <div class="new-users">
+        <h2>Novos Usuários</h2>
+        <div class="user-list">
+          <div class="user">
+            <img src="images/fotoperfil1.jpg">
+            <h2>Rafael Fleury</h2>
+            <p>59 Min Atrás</p>
+          </div>
+          <div class="user">
+            <img src="images/fotoperfil2.jpg">
+            <h2>Alucieny Carvalho</h2>
+            <p>1 Dia Atrás</p>
+          </div>
+          <div class="user">
+            <img src="images/fotoperfil3.jpg">
+            <h2>Natanael Arrabal</h2>
+            <p>3 Semanas Atrás</p>
+          </div>
+          <div class="user">
+            <img src="images/plus.png">
+            <h2>Adicionar</h2>
+            <p>Adicionar Novo Usuário</p>
+          </div>
+        </div>
+      </div>
+      <!--Final da Seção de Novos Usuarios-->
+
+      <!--LISTA DE ORDENS DE SERVIÇO RECENTES-->
+      <div class="recent-orders">
+        <h2>Ordens de Serviço recentes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Descrição Ordem</th>
+              <th>Número da Ordem</th>
+              <th>Status do Pagamento</th>
+              <th>Status Ordem</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <a href="#">Mostrar mais</a>
+      </div>
+      <!--Final Ordens de Serviço-->
+    </main>
+    <!--Fim do Container main-->
+
+    <!-- Inicio da seção da direita-->
+    <div class="right-section">
+      <div class="nav">
+        <button class="menu-btn" id="menu-btn">
+          <span class="material-icons-sharp">
+            menu
+          </span>
+        </button>
+        <div class="dark-mode">
+          <span class="material-icons-sharp active">
+            light_mode
+          </span>
+          <span class="material-icons-sharp">
+            dark_mode
+          </span>
+        </div>
+        
+        <div class="profile">
+          <div class="info">
+            <p>Olá, <b>Rafael Fleury</b></p>
+            <small class="text-muted">Administrador</small>
+          </div>
+          <div class="profile-photo">
+            <img src="images/fotoperfil1.jpg">
+          </div>
+        </div>
+
+      </div>
+      <!--Final da Barra de Navegação-->
+      <div class="user-profile">
+        <div class="logo">
+          <img src="images/logo.png">
+          <h2>Tática Seg</h2>
+          <p>Serviços Especializados</p>
+        </div>
+      </div>
+    
+      <div class="reminders">
+        <div class="header">
+          <h2>Lembretes</h2>
+          <span class="material-icons-sharp">
+            notifications_none
+          </span>
+        </div>
+      
+        <div class="notification">
+          <div class="icon">
+            <span class="material-icons-sharp">
+              volume_up
+            </span>
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Workshops</h3>
+              <small class="text_muted">
+                08:00 AM - 12:00 PM
+              </small>
+            </div>
+            <span class="material-icons-sharp">
+              more_vert
+            </span>
+          </div>
+        </div>
+
+        <div class="notification deactive">
+          <div class="icon">
+            <span class="material-icons-sharp">
+              edit
+            </span>
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Workshops</h3>
+              <small class="text_muted">
+                08:00 AM - 12:00 PM
+              </small>
+            </div>
+            <span class="material-icons-sharp">
+              more_vert
+            </span>
+          </div>
+        </div>
+
+        <div class="notification add-reminder">
+          <div>
+            <span class="material-icons-sharp">
+              add
+            </span>
+            <h3>Adicionar Lembrete</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="orders.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
